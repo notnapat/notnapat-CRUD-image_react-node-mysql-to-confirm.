@@ -1,0 +1,80 @@
+
+
+
+		SERVER OR BACKTEND
+ติดตั้ง package.json in server or backend folder
+- npm init -y
+  ติดตั้งเครื่องมือต่างๆ 
+  - npm i express express-fileupload mysql2 sequelize cors 
+
+## server >>
+
++> public >>
+	+> images >>
+
++> config >>
+	+> Database.js => 3,
+
++> controllers =>
+	+> ProductController.js => 5, 8, 12, 14
+
++> models =>
+	+> ProductModel.js => 4,
+
++> routes =>
+	+> ProductRoute.js => 6,
+
++> index.js => 2, 7, 11,
+
+package.json => 1?
+
++>ติดตั้งแอพ postman ลง pc === ใช้สร้าง และทดสอบ api , ใช้ query ข้อมูลกับ db แทน fontend >>
+	>>postman => 9?, 10?, 13?, 15?
+
+?? >> 
+
+1? == "type":"module", >> add to package.json file
+
+9? GET == ดู หรือ ดึงข้อมูล 
+   		== เลือกเป็น GET แล้วพิมพ์ที่อยู่ host ของ api เพื่อทดสอบ เช่น "http://localhost:5000/products"
+   		== ถ้ายังไม่ได้รับส่งข้อมูล หรือยังไม่ได้ query ข้อมูล จะไม่เจอข้อมูล หรือ ไม่มีข้อมูลอะไรแสดง
+   		
+10? POST == เพิ่มข้อมูล
+  		== เปลี่ยนจาก GET เป็น POST แล้ว คลิกตรง body ติ๊กช่อง form-data
+    		== พิมพ์ title ประเภท text ลงใน KEY , Product 1 ลงใน VALUE
+    		== พิมพ์ file  ประเภท file ลงใน KEY , เลือกรูปภาพ ตรงช่อง VALUE 
+      	== ถ้าถูกต้องจะขึ้น  "msg": "Product Created Successfuly" แล้วจะมีรูปภาพที่เลือกเข้าไปอยู่ในโฟลเดอร์ images ในโปรเจค
+
+13? DELETE == ลบข้อมูล
+			== ลองหาข้อมูล id , PK จาก GET มาใช้ เพื่อระบุข้อมูลที่จะลบ
+			== เปลี่ยนเป็น DELETE แล้วเพิ่ม id หรือ PK จาก db ของข้อมูลที่ต้องการลบไว้หลังสุด หรือ ต่อจาก host
+			== ระบุ id ไวที่ เช่น id = 5 => "http://localhost:5000/products/5"
+			
+15? UPDATE OR PATCH == อัพเดทข้อมูล
+				  == ลองหาข้อมูล id , PK จาก GET มาใช้ เพื่อระบุข้อมูลที่จะลบ
+				  == เปลี่ยนเป็น PATCH แล้วเพิ่ม id หรือ PK จาก db ของข้อมูลที่ต้องการลบไว้หลังสุด หรือ ต่อจาก host
+				  == ระบุ id ไวที่ เช่น id = 5 => "http://localhost:5000/products/5"
+				  == มาที่ body >> form-data แล้วเปลี่ยนข้อมูลภายใน ที่ต้องการอัพเดท
+
+###############################################################
+
+		CLIENT OR FRONTEND
+
+16 => - npx create-react-app client
+
+## client >>
+17 => - npm i react-router-dom axios bulma
+19 => - ติดตั้ง extenstons เพิ่มใน vscode => Bulma Snippets
+
+src >>
+
+index.js => 18,
+
+app.js =>
+
++> component >>
+
++> Productlist.js => 20
+
+
+
