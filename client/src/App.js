@@ -1,8 +1,21 @@
+// 22 impo BrowserRouter, ProduList // BrowRout, Routes, Route1
+// 26 impo AddProduct ,Route2
+// 30 impo EditProduct ,Route3
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ProductList from "./components/Productlist";
+import AddProduct from "./components/AddProduct";
+import EditProduct  from "./components/EditProduct";
+
 function App() {
   return (
-    <div>
-     <h2>aaaa</h2>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ProductList />} />
+        <Route path="add" element={<AddProduct />} />
+        <Route path="edit/:id" element={<EditProduct/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

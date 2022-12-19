@@ -70,11 +70,15 @@ src >>
 
 index.js => 18,
 
-app.js =>
+App.js => 22, 26, 30,
 
 +> component >>
 
-+> Productlist.js => 20
++> Productlist.js => 20, 21, 23, 24, 28, 31
+
++> AddProduct.js  => 25, 27
+
++> EditProduct.js => 29, 32, 33, 34
 
 
 
