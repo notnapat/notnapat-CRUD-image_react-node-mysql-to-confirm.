@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 // 29 ก็อปทั้งหมดมาจากไฟล์ AddProduct.js // เปลี่ยนชื่อปุ่มจาก Delete >> Update // เปลี่ยนฟังชั่น con AddProduct >> EditProduct
 // 32 impo useEffe, usePara // con {id} //ฟังชั่น useEffe , ฟังชั่น con getProductById
 // 33 เปลี่ยนชื่อฟังชั่นจาก saveProduct >> updateProduct // เปลี่ยนที่นี้ด้วย <form onsubmit="savePro >> updatepro"

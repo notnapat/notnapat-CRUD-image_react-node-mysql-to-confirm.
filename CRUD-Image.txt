@@ -6,6 +6,7 @@
 - npm init -y
   ติดตั้งเครื่องมือต่างๆ 
   - npm i express express-fileupload mysql2 sequelize cors 
+35 => - npm install md5
 
 ## server >>
 
@@ -16,7 +17,7 @@
 	+> Database.js => 3,
 
 +> controllers =>
-	+> ProductController.js => 5, 8, 12, 14
+	+> ProductController.js => 5, 8, 12, 14, 36,
 
 +> models =>
 	+> ProductModel.js => 4,
